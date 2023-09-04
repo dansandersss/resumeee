@@ -1,4 +1,84 @@
-document.body.style.backgroundColor="green";
-document.body.innerHTML="<h1>Hello from JS</h1>"
+const modaleWindow=document
+.querySelector('.modale-window');
+const modaleBtn=document.querySelector('.modale-btn')
+const openBtn=document.querySelector('.open-window')
+const body=document.querySelector('body');
 
-console.log('test2');
+
+modaleBtn.addEventListener("click", closeWindow);
+
+openBtn.addEventListener('click', openModale);
+
+function closeWindow(){
+  modaleWindow.classList.toggle('none');
+  openBtn.classList.toggle('seen');
+}
+
+function openModale(){
+  modaleWindow.classList.remove('none');
+  openBtn.classList.remove('seen')
+  // body.style.opacity="0.3";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
